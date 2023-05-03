@@ -51,8 +51,12 @@ the FACTS directory, under "FACTS_Modules/"
 ## LWPR
 LWPR: LWPR compiled for Python via SWIG
 Version: 1.1
+
 Author:  [lhlmgr](https://github.com/lhlmgr)
+
 All source codes for LWPR are obtained from https://github.com/lhlmgr/lwpr
+
+***Currently for Windows, the LWPR source code has to be updated a bit. Please see the Troubleshoot section!***
 
 1. Clone source code (LWPR) in a directory that is not a part of the FACTS directory
 ```bash
@@ -97,3 +101,7 @@ You might not have a compiler installed.
 If you have a compiler installed and vcvarsall is found but error message is "error executing command /u /c vcvarsall.bat" x86_amd64 && set." then it might be because of anaconda messed up your registry. Go to regedit,
 HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun and clear the value. (will have anaconda3 related stuff like "C:\ProgramData\Anaconda3\condabin\conda_hook.bat").
 
+### LWPR source code changes if you are using Windows.
+A bit of the LWPR source code has to be updated for Windows. 
+Please see the comment I posted regarding this issue: 
+https://github.com/lhlmgr/lwpr/issues/1#issuecomment-1527777941
